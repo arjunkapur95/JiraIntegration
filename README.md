@@ -2,4 +2,4 @@
 Checking JiraGithubIntegration
 
 update
-checking In progress
+checking In progresss
