@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;		
 
 import com.applitools.eyes.BatchInfo;
 import com.applitools.eyes.MatchLevel;
@@ -52,14 +53,8 @@ public class AppTest extends TestCase {
 
 		serverURL = new URI("http://www.health.gov.au/");
 		
-		System.setProperty("webdriver.chrome.driver","./chromedriver.exe");
-	      
-        	ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--no-sandbox");
 		
-
-		// Open a Chrome browser.
-		WebDriver driver = new ChromeDriver(chromeOptions);
+		WebDriver driver = new HtmlUnitDriver();
 
 		// Initialize the eyes SDK and set your private API key.
 		
@@ -94,15 +89,8 @@ public class AppTest extends TestCase {
 		URI serverURL = null;
 
 		serverURL = new URI("http://www.health.gov.au/internet/ministers/publishing.nsf/Content/Profile-BM-1");
-		System.setProperty("webdriver.chrome.driver","./chromedriver.exe");
-	      
-        	ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--no-sandbox");
-
 		
-
-		// Open a Chrome browser.
-		WebDriver driver = new ChromeDriver(chromeOptions);
+		WebDriver driver = new HtmlUnitDriver();
 
 		// Initialize the eyes SDK and set your private API key.
 		
@@ -141,14 +129,8 @@ public class AppTest extends TestCase {
 
 		serverURL = new URI("http://www.health.gov.au/");
 
-		System.setProperty("webdriver.chrome.driver","./chromedriver.exe");
-	      
-        	ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--no-sandbox");
 		
-
-		// Open a Chrome browser.
-		WebDriver driver = new ChromeDriver(chromeOptions);
+		WebDriver driver = new HtmlUnitDriver();
 
 		
 		
@@ -187,14 +169,9 @@ public class AppTest extends TestCase {
 
 		serverURL = new URI("http://www.health.gov.au/");
 
-		System.setProperty("webdriver.chrome.driver","./chromedriver.exe");
-	      
-        	ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--no-sandbox");
 		
-
 		// Open a Chrome browser.
-		WebDriver driver = new ChromeDriver(chromeOptions);//testing CI
+		WebDriver driver = new HtmlUnitDriver();//testing CI
 
 		
 		
