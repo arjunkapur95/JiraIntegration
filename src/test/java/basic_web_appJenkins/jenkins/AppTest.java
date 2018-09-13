@@ -186,7 +186,7 @@ public class AppTest extends TestCase {
 			
 			assertEquals("119",text);
 			TimeUnit.SECONDS.sleep(3);
-			// Visual checkpoint #2.
+			 /// Visual checkpoint #2.
 			
 		
 			TimeUnit.SECONDS.sleep(11);
